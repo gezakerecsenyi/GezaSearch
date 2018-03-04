@@ -10,7 +10,7 @@ Otherwise, to use run the 'bind' function, which takes three args:
 For example:
 
 ```
-bind("paign", [
+bind("paIGn", [
   { _id : "5a82a82a7790e3001465e6da", user : "paignpast", title : "Sexier", identifier : "grumpy-sexier-crib", description : "This project sees how Bootstrap makes button groups responsive.", privacy : "1", trending : 3.258096538021482, views : 4, likes : [ ], comments : [], timestamp : 1518512170201, nominated : false, type: "project" },
   { _id : "5a82a82a7790e3001465e6da", user : "paignpast", title : "Paign", identifier : "chicken-cow-pig", description : "This project sees how Bootstrap makes button groups responsive.", privacy : "1", trending : 3.258096538021482, views : 4, likes : [ ], comments : [], timestamp : 1518512170201, nominated : false, type: "project" },
   { _id : "5a82a82a7790e3001465e6da", user : "paignpast", title : "paignpast", identifier : "chocolate-candy-sweets", description : "This project sees how Bootstrap makes button groups responsive.", privacy : "1", trending : 3.258096538021482, views : 4, likes : [ ], comments : [], timestamp : 1518512170201, nominated : false, type: "project" },
@@ -26,7 +26,7 @@ would return
   properties: 
    { totResults: 5,
      hitsPerPage: 4,
-     term: 'paign',
+     term: 'paIGn',
      page: 0,
      results: 4 },
   results: 
@@ -49,5 +49,7 @@ would return
        _id: '5a82a82a7790e3001465e6da',
        type: 'project' } ] }
 ```
+
+After that, one can further switch page by using `switchpage(pageNumberWanted)`. (note that this counts from 0).
 
 Great. Now use it.
