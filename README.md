@@ -1,3 +1,47 @@
 # GezaSearch
 
 Go away. If you're not tti0 or Pal Kerecsenyi, just go away. You have no business here.
+
+
+Otherwise, to use run the 'bind' function, which takes three args:
+
+```bind(theSearchQuery, [{jsonObjectOfDBInfo: true, anyExtraThingsNeeded: [{answer:yes, whatYouNeed:[{ifDBentryIsProject:'add "type:project"'},{ifDBentryIsUser:'add "type:user"'}]}]}], function(){var amountOfHits = 10; var onAPage = 38; return amountOfHits+onAPage}, function(){var pageToShow = 29; return pageToShow});```
+
+For example:
+
+```bind("paign", [
+  { _id : "5a82a82a7790e3001465e6da", user : "paignpast", title : "Sexier", identifier : "grumpy-sexier-crib", description : "This project sees how Bootstrap makes button groups responsive.", privacy : "1", trending : 3.258096538021482, views : 4, likes : [ ], comments : [], timestamp : 1518512170201, nominated : false, type: "project" },
+  { _id : "5a82a82a7790e3001465e6da", user : "paignpast", title : "Paign", identifier : "chicken-cow-pig", description : "This project sees how Bootstrap makes button groups responsive.", privacy : "1", trending : 3.258096538021482, views : 4, likes : [ ], comments : [], timestamp : 1518512170201, nominated : false, type: "project" },
+  { _id : "5a82a82a7790e3001465e6da", user : "paignpast", title : "paignpast", identifier : "chocolate-candy-sweets", description : "This project sees how Bootstrap makes button groups responsive.", privacy : "1", trending : 3.258096538021482, views : 4, likes : [ ], comments : [], timestamp : 1518512170201, nominated : false, type: "project" },
+  { _id : "5a7cb274ab7c93003696e48f", username : "paignpast", name : "Pal Kerecsenyi", country : "GB", gender : "male", algolia : null, followers : [ ], following : [ ], bio : "I made CodeDragon with 3 other people. github.com/codeddraig/ffau", perms : 1, token : "87646}6cRc::gg", tutorial: 2, type:"user"},
+  { _id : "5a7cb274ab7c93003696e48f", username : "paignpast", name : "Pal Kerecsenyi", country : "GB", gender : "male", algolia : null, followers : [ ], following : [ ], bio : "I made CodeDragon with 3 other people. github.com/codeddraig/ffau", perms : 1, token : "87646}6cRc::gg", tutorial: 2, type:"user"}
+], 4, 0));
+```
+
+would return
+
+```
+{ success: true,
+  properties: { totResults: 5, hitsPerPage: 4, term: 'i', page: 0, results: 4 },
+  results: 
+   [ { username: 'paignpast',
+       name: 'Pal Kerecsenyi',
+       bio: 'I made CodeDragon with 3 other people. github.com/codeddraig/ffau',
+       _id: '5a82a82a7790e3001465e6da',
+       type: 'user' },
+     { username: 'paignpast',
+       name: 'Pal Kerecsenyi',
+       bio: 'I made CodeDragon with 3 other people. github.com/codeddraig/ffau',
+       _id: '5a82a82a7790e3001465e6da',
+       type: 'user' },
+     { description: 'This project sees how Bootstrap makes button groups responsive.',
+       title: 'Paign',
+       _id: '5a82a82a7790e3001465e6da',
+       type: 'project' },
+     { description: 'This project sees how Bootstrap makes button groups responsive.',
+       title: 'Sexier',
+       _id: '5a82a82a7790e3001465e6da',
+       type: 'project' } ] }
+```
+
+Great. Now use it.
