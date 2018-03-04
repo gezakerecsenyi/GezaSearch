@@ -5,7 +5,7 @@ Go away. If you're not tti0 or Pal Kerecsenyi, just go away. You have no busines
 
 Otherwise, to use run the 'bind' function, which takes three args:
 
-```bind(theSearchQuery, [{jsonObjectOfDBInfo: true, anyExtraThingsNeeded: [{answer:yes, whatYouNeed:[{ifDBentryIsProject:'add "type:project"'},{ifDBentryIsUser:'add "type:user"'}]}]}], function(){var amountOfHits = 10; var onAPage = 38; return amountOfHits+onAPage}, function(){var pageToShow = 29; return pageToShow});```
+```bind(theSearchQuery, [{jsonObjectOfDBInfo: true, anyExtraThingsNeeded: [{answer:yes, whatYouNeed:[{ifDBentryIsProject:'add "type:project"'},{ifDBentryIsUser:'add "type:user"'}]}]}], amountOfHitsOnAPage, pageNumToShow = 29)```
 
 For example:
 
