@@ -9,7 +9,8 @@ Otherwise, to use run the 'bind' function, which takes three args:
 
 For example:
 
-```bind("paign", [
+```
+bind("paign", [
   { _id : "5a82a82a7790e3001465e6da", user : "paignpast", title : "Sexier", identifier : "grumpy-sexier-crib", description : "This project sees how Bootstrap makes button groups responsive.", privacy : "1", trending : 3.258096538021482, views : 4, likes : [ ], comments : [], timestamp : 1518512170201, nominated : false, type: "project" },
   { _id : "5a82a82a7790e3001465e6da", user : "paignpast", title : "Paign", identifier : "chicken-cow-pig", description : "This project sees how Bootstrap makes button groups responsive.", privacy : "1", trending : 3.258096538021482, views : 4, likes : [ ], comments : [], timestamp : 1518512170201, nominated : false, type: "project" },
   { _id : "5a82a82a7790e3001465e6da", user : "paignpast", title : "paignpast", identifier : "chocolate-candy-sweets", description : "This project sees how Bootstrap makes button groups responsive.", privacy : "1", trending : 3.258096538021482, views : 4, likes : [ ], comments : [], timestamp : 1518512170201, nominated : false, type: "project" },
@@ -22,7 +23,12 @@ would return
 
 ```
 { success: true,
-  properties: { totResults: 5, hitsPerPage: 4, term: 'i', page: 0, results: 4 },
+  properties: 
+   { totResults: 5,
+     hitsPerPage: 4,
+     term: 'paign',
+     page: 0,
+     results: 4 },
   results: 
    [ { username: 'paignpast',
        name: 'Pal Kerecsenyi',
@@ -39,7 +45,7 @@ would return
        _id: '5a82a82a7790e3001465e6da',
        type: 'project' },
      { description: 'This project sees how Bootstrap makes button groups responsive.',
-       title: 'Sexier',
+       title: 'paignpast',
        _id: '5a82a82a7790e3001465e6da',
        type: 'project' } ] }
 ```
