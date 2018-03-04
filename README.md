@@ -50,6 +50,6 @@ would return
        type: 'project' } ] }
 ```
 
-After that, one can further switch page by using `switchpage(pageNumberWanted)`. (note that this counts from 0).
+After that, one can further switch page by using `switchPage(pageNumberWanted)` (note that this counts from 0). If, for some reason, you do need to see all of the results, do `switchPage(listAll)` (note the lack of speech marks). For the next page, do `switchPage(next)` and to see the previous page do `switchPage(prev)`.
 
-Great. Now use it.
+Great, that's all. Now use it.
