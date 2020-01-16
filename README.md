@@ -1,9 +1,6 @@
 # GezaSearch
 
-Go away. If you're not tti0 or Pal Kerecsenyi, just go away. You have no business here.
-
-
-Otherwise, to use run the 'bind' function, which takes three args:
+To use run the 'bind' function, which takes three args:
 
 ```bind(theSearchQuery, [{jsonObjectOfDBInfo: true, anyExtraThingsNeeded: [{answer:yes, whatYouNeed:[{ifDBentryIsProject:'add "type:project"'},{ifDBentryIsUser:'add "type:user"'}]}]}], amountOfHitsOnAPage, pageNumToShow = 29)```
 
