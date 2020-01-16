@@ -1,4 +1,4 @@
-# GezaSearch
+# Search thingy
 
 To use run the 'bind' function, which takes three args:
 
